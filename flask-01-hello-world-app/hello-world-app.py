@@ -1,6 +1,13 @@
 from flask import Flask 
 app = Flask(__name__)
 
+@app.route('/')
+def hello():
+    return "Hello, Flask!"
+
+@app.route('/second')
+def second_page():
+    return "Hello, Flask222222222222222222!"
 
 if __name__ == '__main__':
 
